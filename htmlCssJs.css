@@ -1,0 +1,123 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #5813e3, #7a0a96);
+  padding: 10px;
+}
+
+.outerContainer {
+  width: 540px;
+  background-color: #ffffff;
+  margin: 150px auto 80px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.outerContainer h1 {
+  display: flex;
+  color: #002765;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.outerContainer img {
+  display: flex;
+  width: 40px;
+  margin-left: 4px;
+}
+
+.boxIsian {
+  background-color: #e7dcff;
+  justify-content: space-between;
+  display: flex;
+  padding-left: 30px;
+  border-radius: 30px;
+}
+
+.boxIsian input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 100px;
+}
+
+.boxIsian button {
+  border: none;
+  outline: none;
+  background-color: #573cf1;
+  color: white;
+  border-radius: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.boxIsian button:hover{
+  background-color: #b23cf1;
+  transition: 250ms;
+}
+
+ol {
+  list-style: none;
+  padding-top: 20px;
+}
+
+li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  user-select: none;
+  font-size: medium;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+}
+
+ol li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-image: url(unchecked.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.checked{
+  color:#868686;
+  text-decoration: line-through;
+}
+
+.checked::before{
+  background-image: url(checked.png);
+}
+
+span{
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+}
+
+span:hover{
+  background: #edeef0;
+  transition-duration: 250ms;
+  border-radius: 100%;
+}
